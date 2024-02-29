@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Protest+Revolution&display=swap');
+
+:root {
+    --primary-background-color: #F9F4EE;
+    --primary-text-color: #ff6417;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--primary-background-color);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ----------------------------- Common -------------------------------- */
+
+.link_embed {
+    transition: filter 0.75s ease-out;
+}
+
+.link_embed:hover {
+    filter: blur(2px);
+}
+
+.image_frame_animation {}
+
+.image_frame_animation img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* -------------------------- Header -------------------------------- */
+
+.header {
+    position: relative;
+    text-align: center;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #fff;
+    font-size: 0.8vw;
+    line-height: 0.8vw;
+    letter-spacing: 0.1vw;
+}
+
+.header_slider {
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+.heading_define {
+    text-align: left;
+}
+
+.heading_define p {
+    margin: 4px 0;
+}
+
+.heading_logo {
+    display: flex;
+    align-items: center;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2vw;
+    color: #fff;
+    text-decoration: none;
+}
+
+.heading_logo_image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.heading_date {
+    color: #fff;
+
+}
+
+.header_introduction {
+    position: absolute;
+    width: 100%;
+    top: 62vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_introduction_main {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3.2vw;
+    line-height: 3.2vw;
+    max-width: 70vw;
+    margin-bottom: 15px;
+}
+
+.header_introduction_sub {
+    margin-top: 24px;
+    font-size: 1vw;
+    text-transform: uppercase;
+}
+
+/* -------------------- Content ------------------------ */
+
+/* +++++++++++++++++++++++ Content welcome ++++++++++++++++++++++++ */
+
+.content {
+    width: 100%;
+    padding: 140px 0;
+}
+
+.content_welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--primary-text-color);
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 0.8vw;
+    letter-spacing: 0.1vw;
+    font-style: normal;
+    text-align: center;
+}
+
+.content_welcome_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content_welcome_main_title {
+    position: relative;
+    overflow: hidden;
+    height: 44px;
+    padding: 0 40px;
+    margin-bottom: 12px;
+}
+
+.content_welcome_main_title_text {
+    display: inline;
+    float: left;
+    margin: 0;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.4vw;
+    line-height: 2.6vw;
+    margin-top: 4px;
+}
+
+
+.content_welcome_main_title:before {
+    content: '[';
+    left: 0;
+}
+
+.content_welcome_main_title:after {
+    content: ']';
+    position: absolute;
+    right: 0;
+}
+
+.content_welcome_main_title:after,
+.content_welcome_main_title:before {
+    position: absolute;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 500;
+    top: 0;
+    color: #16a085;
+    font-size: 2vw;
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.content_welcome_main_title_list {
+    margin-top: 0;
+    padding-left: 334px;
+    text-align: left;
+    list-style: none;
+    animation-name: change;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+.content_welcome_main_title_list_item {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.4vw;
+    line-height: 3vw;
+    margin: 0;
+}
+
+@keyframes opacity {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes change {
+    0%,
+    12.66%,
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    16.66%,
+    29.32% {
+        transform: translate3d(0, -25%, 0);
+    }
+
+    33.32%,
+    45.98% {
+        transform: translate3d(0, -50%, 0);
+    }
+
+    49.98%,
+    62.64% {
+        transform: translate3d(0, -75%, 0);
+    }
+
+    66.64%,
+    79.3% {
+        transform: translate3d(0, -50%, 0);
+    }
+
+    83.3%,
+    95.96% {
+        transform: translate3d(0, -25%, 0);
+    }
+}
+
+
+.content_welcome_main_description_text {
+    max-width: 32vw;
+    text-align: center;
+    font-size: 1.2vw;
+    line-height: 1.2vw;
+}
+
+.content_welcome_image {
+    width: 38vw;
+    margin: 20px 0;
+}
+
+.content_welcome_image_image {
+
+}
+
+.content_welcome_sub {
+    max-width: 36vw;
+}
+
+.content_welcome_sub_text {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.6vw;
+    line-height: 1.8vw;
+}
+
+/* +++++++++++++++++++++++++ Content pair +++++++++++++++++++++++++++++  */
+
+.content_pair {
+    display: flex;
+    justify-content: space-between;
+    grid-column-gap: 14px;
+    height: 130vh;
+    padding: 80px 14px;
+}
+
+.content_pair_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.content_pair_item_background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    filter: brightness(100%) blur(0px);
+    will-change: filter;
+    transition: filter 2s linear;
+}
+
+.content_pair_item_info {
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    position: relative;
+    top: -8vh;
+    z-index: 5;
+}
+
+.content_pair_item_info  p {
+    font-family: "Kaushan Script", cursive;
+    color: #fff;
+    font-size: 2.2vw;
+    line-height: 2.2vw;
+}
+
+.content_pair_item_info_wrap-image {
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.content_pair_item_info_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    will-change: transform;
+    transition: transform 10s linear;
+}
+
+.content_pair_item_direction {
+    position: absolute;
+    bottom: 30px;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #fff;
+    font-size: 1vw;
+    letter-spacing: 0.1vw;
+    transition: transform 0.5s ease-in-out;
+    padding: 5px;
+    z-index: 5;
+}
+
+.content_pair_item_direction:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+.content_pair_item_direction:hover + .content_pair_item_info .content_pair_item_info_image {
+    transform-style: preserve-3d;
+    transform: translate3d(0px, 0px, 0px) scale3d(1.2, 1.2, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+
+.content_pair_item_direction:hover ~ .content_pair_item_background {
+    filter: brightness(66%) blur(2px);
+}
+
+
+/* +++++++++++++++++++++++++ Content road +++++++++++++++++++++++++++++ */
+
+.content_road {
+
+}
+
+
+
+/* -------------------------- Footer ---------------------------- */
